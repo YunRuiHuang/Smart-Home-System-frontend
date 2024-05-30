@@ -53,18 +53,13 @@ export default {
     return {
       isShowNav: true,
       pageSize: {
-        width: '85%'
+        width: '100%'
       }
     }
   },
   methods: {
     reverstNav () {
       this.isShowNav = !this.isShowNav
-      if (this.isShowNav) {
-        this.pageSize.width = '85%'
-      } else {
-        this.pageSize.width = '99%'
-      }
     }
   }
 }
@@ -172,12 +167,20 @@ html, body{
     border: 0;
   }
 
+  .hidden-navigate{
+    height: 5%;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px;
+    border-style: solid;
+  }
+
   .navigate-label{
     height: 100px;
   }
 
   .page{
-    height: auto;
+    height: 95%;
     width: 100%;
   }
 
