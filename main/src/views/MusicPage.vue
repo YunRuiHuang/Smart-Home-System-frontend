@@ -25,7 +25,7 @@
       </div>
 </template>
 
-<style>
+<style scoped>
 
 .folderlist {
   display: flex;

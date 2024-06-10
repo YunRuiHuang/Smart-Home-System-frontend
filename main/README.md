@@ -6,7 +6,7 @@
 docker build -t frontend .
 #using the dockerfile to build a image in docker
 
-docker run --name frontend --network sample-network -it -p 8080:80 --rm -d --restart always frontend
+docker run --name frontend --network sample-network -it -p 8080:80 -d --restart always frontend
 #set up the interface at port 3001, now you access localhost:3001/ you should see a test:"success" which means success setup the interface server
 
 ```

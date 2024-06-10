@@ -1,0 +1,89 @@
+.topBar{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 5%;
+  align-items: center;
+  justify-content: center;
+}
+.button{
+  display: flex;
+  width: 6%;
+  height: 30%;
+  align-items: center;
+  justify-content: center;
+}
+.button:hover{
+  background-color: gray;
+}
+.menu{
+  width: 6%;
+  height: 30%;
+}
+
+.summaryBar{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.frame{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 85%;
+  align-items: center;
+  justify-content: center;
+}
+.switchBar{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  height: 2%;
+  align-items: normal;
+  justify-content: left;
+}
+.label{
+  width: 20%;
+  height: 100%;
+  align-items: center;
+}
+.label:hover{
+  background-color: gray;
+}
+.table{
+  width: 99%;
+  height: 98%;
+}
+table{
+  width: 100%;
+  height: auto;
+  border-collapse: collapse; 
+}
+th, td{
+  border-left: 1px solid black;
+  border-right: 1px solid black; 
+}
+tr:hover{
+  background-color: aqua;
+}
+
+@media(max-width:600px) {
+  .topBar{
+    height: 20%;
+  }
+  .button{
+    width: 11%;
+  }
+  .summaryBar{
+    height: 20%;
+  }
+  .switchBar{
+    width: 80%;
+    height: 20%;
+  }
+}

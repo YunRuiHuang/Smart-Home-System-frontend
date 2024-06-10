@@ -25,6 +25,12 @@
           </div>
         </router-link>
 
+        <router-link to="/bill">
+          <div class="navigate-label">
+              <p>Bill</p>
+          </div>
+        </router-link>
+
         <router-link to="/house">
           <div class="navigate-label">
               <p>Home Status</p>
