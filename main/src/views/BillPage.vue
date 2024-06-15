@@ -333,7 +333,7 @@ export default {
       } else if (this.inputData.time.year === 0 | this.inputData.time.month === 0 | this.inputData.time.day === 0) {
         const date = new Date()
         this.inputData.time.year = date.getFullYear()
-        this.inputData.time.month = date.getMonth()
+        this.inputData.time.month = (date.getMonth() + 1)
         this.inputData.time.day = date.getDate()
         this.inputData.time.hour = date.getHours()
         this.inputData.time.min = date.getMinutes()
@@ -380,7 +380,7 @@ export default {
       } else if (this.inputData.time.year === 0 | this.inputData.time.month === 0 | this.inputData.time.day === 0) {
         const date = new Date()
         this.inputData.time.year = date.getFullYear()
-        this.inputData.time.month = date.getMonth()
+        this.inputData.time.month = (date.getMonth() + 1)
         this.inputData.time.day = date.getDate()
         this.inputData.time.hour = date.getHours()
         this.inputData.time.min = date.getMinutes()
