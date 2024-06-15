@@ -71,8 +71,8 @@
   <div class="inputScreen" v-if="showInputScreen">
     <div class="button" @click="inputScreenSwitch()">X</div>
     <div> {{ error }}</div>
-    <div> title: {{ inputData.title }}<input v-model="inputData.title"></div>
-    <div> type: {{ inputData.type }}
+    <div> title: <input v-model="inputData.title"></div>
+    <div> type:
       <input type="radio" id="in" value="in" v-model="inputData.type" />
       <label for="in">In</label>
       <input type="radio" id="out" value="out" v-model="inputData.type" />
@@ -289,7 +289,7 @@ export default {
       } else if (this.inputData.time.year === 0 | this.inputData.time.month === 0 | this.inputData.time.day === 0) {
         const date = new Date()
         this.inputData.time.year = date.getFullYear()
-        this.inputData.time.month = date.getMonth()
+        this.inputData.time.month = (date.getMonth() + 1)
         this.inputData.time.day = date.getDate()
         this.inputData.time.hour = date.getHours()
         this.inputData.time.min = date.getMinutes()
