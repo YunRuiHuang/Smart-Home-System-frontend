@@ -112,7 +112,7 @@ export default {
   },
   methods: {
     playmusic () {
-      fetch('http://10.0.0.100:3002/status', { method: 'PUT' })
+      fetch('http://192.168.0.102:3002/status', { method: 'PUT' })
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok')
@@ -128,7 +128,7 @@ export default {
         })
     },
     updateMusic () {
-      fetch('http://10.0.0.100:3002/status')
+      fetch('http://192.168.0.102:3002/status')
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok')
@@ -141,7 +141,7 @@ export default {
         .catch(error => {
           console.error('Error:', error)
         })
-      fetch('http://10.0.0.100:3002/playing')
+      fetch('http://192.168.0.102:3002/playing')
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok')
@@ -157,7 +157,7 @@ export default {
         })
     },
     getMusicList () {
-      fetch('http://10.0.0.100:3002/list')
+      fetch('http://192.168.0.102:3002/list')
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok')
@@ -172,7 +172,7 @@ export default {
         })
     },
     getFolderList () {
-      fetch('http://10.0.0.100:3002/folderlist')
+      fetch('http://192.168.0.102:3002/folderlist')
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok')
@@ -187,7 +187,7 @@ export default {
         })
     },
     changeFolder (folderName) {
-      fetch('http://10.0.0.100:3002/folder', {
+      fetch('http://192.168.0.102:3002/folder', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -207,7 +207,7 @@ export default {
         })
     },
     update () {
-      fetch('http://10.0.0.100:3002/update', { method: 'PUT' })
+      fetch('http://192.168.0.102:3002/update', { method: 'PUT' })
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok')
@@ -222,7 +222,7 @@ export default {
         })
     },
     rand () {
-      fetch('http://10.0.0.100:3002/rand', { method: 'PUT' })
+      fetch('http://192.168.0.102:3002/rand', { method: 'PUT' })
         .then(response => {
           if (!response.ok) {
             throw new Error('Network response was not ok')
@@ -238,7 +238,7 @@ export default {
       this.playmusic()
     },
     addMusic (music) {
-      fetch('http://10.0.0.100:3002/add', {
+      fetch('http://192.168.0.102:3002/add', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

@@ -104,7 +104,7 @@
 export default {
   data () {
     return {
-      server: 'http://10.0.0.100:3003',
+      server: 'http://192.168.0.102:3003',
       showInputScreen: false,
       searchOption: {
         year: [],
